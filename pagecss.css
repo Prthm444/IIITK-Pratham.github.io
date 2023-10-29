@@ -1,0 +1,521 @@
+body{
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+      
+header{
+  background-color: white;
+  width: 1500px;
+ 
+   
+    z-index:1;
+}
+
+header>a>img{
+width:300px;
+height:120px;
+float: left;
+margin-left: 50px;
+}
+
+header>h2,h3 {
+    color: transparent;
+  
+    animation: effect 7s linear infinite;
+    text-align: right;
+    font-family: 'Halant', serif;
+    margin-right: 50px;
+    font-size: 34px;
+  
+}
+header>h2{
+    font-size: 60px;
+    
+    color: transparent;
+    text-align: right;
+}
+
+
+@keyframes effect {
+    0% {
+        background: linear-gradient(to right,
+                rgb(77, 77, 240),rgb(0, 255, 140));
+        -webkit-background-clip: text;
+    }
+    20% {
+        background: linear-gradient(to right,
+            rgb(95, 95, 193),rgb(37, 214, 135),rgb(66, 66, 196));
+        -webkit-background-clip: text;
+    }
+    40% {
+        background: linear-gradient(to right,
+            rgb(25, 197, 119),rgb(91, 91, 186),rgb(48, 51, 216));
+        -webkit-background-clip: text;
+    }
+    60% {
+      background: linear-gradient(to right,
+      rgb(54, 202, 136),rgb(2, 34, 192), rgb(100, 221, 166));
+        -webkit-background-clip: text;
+    }
+    80% {
+        background: linear-gradient(to right,
+        rgb(58, 88, 238),	rgb(14, 235, 135));
+        -webkit-background-clip: text;
+    }
+    100%{
+        background: linear-gradient(to right,
+        rgb(37, 67, 212),rgb(23, 195, 118));
+        -webkit-background-clip: text;
+    }
+}
+
+.navbar{
+    background-color: white;
+   margin-left: 130px;
+   margin-top:0px;
+   font-family: 'Sofia Sans Extra Condensed', sans-serif;
+   font-size: 10px;
+  
+}
+.navbar ol{
+    position :absolute;
+}
+.navbar ol li{
+    color:rgb(23, 195, 118);
+    list-style :none;
+    padding: 14px;
+    font-size: 26px;
+   display :inline-block;
+    overflow:hidden;
+  
+   
+}
+.navbar ol li:hover{
+    border-bottom:3px solid rgb(23, 195, 118);
+}
+.navbar{
+  text-align: center;
+  z-index:0;
+ 
+}
+.navbar .menu li{
+ 
+   display:none;
+}
+.navbar ol li:hover .menu li{
+   
+    display:block;
+    position: relative;
+   z-index:1;
+   font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    right: 0;
+    left: 0;
+    border-bottom:2px dotted rgb(54, 224, 148);
+  
+   
+  width: 200px;
+ text-align: center;
+ margin-right: 30px;
+ margin-left: 0px;
+ font-size:24px;
+ background-color: rgb(242, 248, 246);
+ box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+.navbar ol li:hover .menu li:first-child{
+
+    margin-top:20px;
+}
+
+.navbar .menu{
+    
+   font-size:26px;
+    margin-left: -56px;
+    margin-top:18px;
+}
+
+
+.navbar ol li:hover .menu li:hover{
+    border-bottom:3px solid rgb(2, 241, 117);
+    border-bottom-left-radius: 9px;
+   color:rgb(7, 247, 159);
+    background-color: rgb(255, 255, 255);
+}
+
+video, #slideshow {
+    margin-top: 100px;
+    width:800px;
+    height: 450px;
+    float:left;
+    z-index: 0;
+    overflow: hidden;
+    margin-left: 50px;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2);
+    z-index:3;
+}
+
+.welcome{
+    margin-top: 100px;
+    margin-left: 900px;
+    margin-right: 10px;
+    font-size: 30px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+
+.welcome2{
+    margin-top: 0px;
+    margin-left: 900px;
+    margin-right: 10px;
+    font-size: 30px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+
+
+
+ /* Styling the area of the slides */
+     
+ #slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+}
+ 
+/* Style each of the sides
+with a fixed width and height */
+ 
+.slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+}
+ 
+/* Add animation to the slides */
+ 
+.slide-wrapper {
+     
+    /* Calculate the total width on the
+  basis of number of slides */
+    width: calc(728px * 4);
+     
+    /* Specify the animation with the
+  duration and speed */
+    animation: slide 16s ease infinite;
+}
+ 
+/* Set the background color
+of each of the slides */
+ 
+.slide:nth-child(1) {
+    background: green;
+}
+ 
+.slide:nth-child(2) {
+    background: pink;
+}
+ 
+.slide:nth-child(3) {
+    background: red;
+}
+ 
+.slide:nth-child(4) {
+    background: yellow;
+}
+ 
+/* Define the animation
+for the slideshow */
+ 
+@keyframes slide {
+     
+    /* Calculate the margin-left for
+  each of the slides */
+    20% {
+        margin-left: 0px;
+    }
+    40% {
+        margin-left: calc(-728px * 1);
+    }
+    60% {
+        margin-left: calc(-728px * 2);
+    }
+    80% {
+        margin-left: calc(-728px * 3);
+    }
+}
+
+#slideshow {
+    margin-left:90px;
+    margin-top: 110px;
+}
+
+table,tr,td{
+    border: 2px dotted black;
+    border-collapse: collapse;
+    padding:20px;
+}
+
+table{
+    font-size: 30px;
+    margin-left: 80px;
+    width: 730px;
+    height:400px;
+    text-align:center;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.placement{
+    margin-top:0px;
+    float: left;
+}
+.placement tr:first-child{
+    color:rgb(11, 195, 133);
+    text-decoration-line: underline;
+    
+}
+
+.news{
+    margin-left: 120px;
+  margin-right: 50px;
+    width:600px;
+    margin-top: 36px;
+    font-size: 25px;
+    padding:5px;
+    float:left;
+}
+
+.news tr:first-child{
+    background-color:rgb(61, 116, 234);
+    font-size:40px;
+    border: 4px solid black;
+    border-collapse: collapse;
+    padding:20px;
+    text-align:left;
+    box-shadow: 8px 6px 7px 10px rgba(0, 0, 0, 0.4);
+    color:white;
+}
+
+.plc,.new{
+    float:left;
+    width: 50%;
+}
+
+.plc h2{
+    font-size: 40px;
+    text-align:center;
+    margin-left: 80px;
+    color:rgb(73, 72, 72);
+    background-color:rgb(61, 116, 234);
+   width:680px;
+    border: 4px solid black;
+   margin-bottom: 0px;
+    padding:20px;
+    text-align:left;
+    box-shadow: 8px 6px 7px 5px rgba(0, 0, 0, 0.4);
+    color:white;
+
+}
+
+.para_l{
+    text-align:center;
+    font-size:25px;
+    border: 5px outset rgb(40, 200, 123);
+    padding :20px;
+    box-shadow: 10px 10px 5px 9px rgba(0, 0, 0, 0.2);
+  margin-top: 700px;
+  margin-right:800px;
+  margin-left:80px;
+    width:600px;
+}
+
+.para_l>b{
+    color:rgb(71, 71, 196);
+    font-size:40px;
+    text-shadow: 2px 4px 2px rgb(40, 200, 123);
+    letter-spacing: 3px;
+    
+    font-weight: 600;
+}
+
+
+
+.para_r{
+   margin-top:-466px;
+   margin-left: 870px ;
+    text-align:center;
+    font-size:25px;
+    border: 5px outset rgb(40, 200, 123);
+    padding :20px;
+    box-shadow: 10px 10px 5px 9px rgba(0, 0, 0, 0.2);
+    
+    width:500px;
+}
+
+.para_r>b{
+    color:rgb(71, 71, 196);
+    font-size:40px;
+    text-shadow: 2px 4px 2px rgb(40, 200, 123);
+    letter-spacing: 3px;
+    
+    font-weight: 600;
+}
+
+div>hr{
+    border-bottom:2px solid black;
+    width:400px;
+    
+}
+
+.faculty{
+   width:700px;
+    margin-right:1000px;
+    margin-left:-25px
+}
+
+.faculty{
+    padding:20px;
+}
+
+.faculty tr:first-child{
+    box-shadow: 10px 2px 5px 5px rgba(0, 0, 0, 0.6);
+    background-color: rgb(61, 116, 234);
+    font-size: 50px;
+    color: white;
+    border:4px solid black;
+    text-align: left;
+    letter-spacing: 2px;
+    
+}
+
+
+
+.faculty img{
+    width: 180px;
+    height:200px;
+    box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, 0.5);
+}
+.faculty .des{
+ font-style: italic;
+ font-size:24px;
+ color: grey;
+}
+
+.research {
+    margin-left:790px;
+   margin-top:-480px;
+}
+
+.research table{
+    width:580px;
+}
+.research tr:first-child{
+    box-shadow: 10px 2px 5px 5px rgba(0, 0, 0, 0.6);
+    background-color: rgb(61, 116, 234);
+    font-size: 50px;
+    color: white;
+    border:4px solid black;
+    text-align: left;
+    letter-spacing: 2px;
+    
+}
+.research .rdes{
+    font-style: italic;
+ font-size:24px;
+ color: rgb(68, 67, 67);
+}
+.research tr{
+   
+    padding: 20px;
+    color:rgb(0, 153, 255)
+}
+
+.leftimg{
+    float:left;
+    width:600px;
+    height:400px;
+    margin-left:100px;
+    margin-top:50px;
+    z-index: 0;
+}
+
+.rightimg{
+    float:right;
+    width:600px;
+    height:400px;
+    margin-right:100px;
+    margin-top:50px;
+    z-index: 0;
+}
+
+#ltxt{
+   position:absolute;
+  margin-top:230px;
+margin-left: 280px;
+ padding:10px;
+   font-size: 50px;
+   background-color: grey;
+   border-radius: 20px;
+   box-shadow: 10px 2px 5px 5px rgba(0, 0, 0, 0.6);
+   text-decoration: none;
+}
+
+#rtxt{
+    position:absolute;
+    margin-top:230px;
+  margin-left: 950px;
+  padding:10px;
+     font-size: 50px;
+     background-color: grey;
+     border-radius: 20px;
+     box-shadow: 10px 2px 5px 5px rgba(0, 0, 0, 0.6);
+     text-decoration: none;
+}
+
+#ltxt:hover,#rtxt:hover{
+    background-color: white;
+}
+footer{
+    margin-top:500px;
+    margin:none;
+    background-color: rgb(190, 184, 184);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+
+.convo{
+    float:right;
+    position :fixed;
+    width:150px;
+    height:150px;
+    font-size: 30px;
+    text-align:center;
+    border-radius: 20px;
+    z-index: 1;
+}
+.convo img{
+    width:150px;
+    height:120px;
+
+}
+
+.social img{
+    height:50px;
+    width:50px;
+    margin:20px;
+   border-radius: 30px;
+   margin-top: 80px;
+}
+.social{
+    margin-left:570px;
+  
+}
+
+.address{
+    background-color: rgb(137, 133, 133);
+    text-align: center;
+    font-size:30px;
+    height:200px;
+    font-style: italic;
+}
